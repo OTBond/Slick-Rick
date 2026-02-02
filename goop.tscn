@@ -1,0 +1,79 @@
+[gd_scene load_steps=13 format=3 uid="uid://d2vec62sbprpr"]
+
+[ext_resource type="Texture2D" uid="uid://bsnb75wa8a057" path="res://assets/sprites/Goop.png" id="1_t7hpo"]
+[ext_resource type="Script" uid="uid://bs63cqqun64f0" path="res://goop.gd" id="1_vtic5"]
+[ext_resource type="Texture2D" uid="uid://uh5obdqro0wx" path="res://assets/sprites/GoopBorder.png" id="2_vj6bd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vj6bd"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(0, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtic5"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(25, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruvjk"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(50, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yetid"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(100, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0uda"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(125, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4efs"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(150, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrgnk"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(175, 0, 25, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5hh6"]
+atlas = ExtResource("1_t7hpo")
+region = Rect2(200, 0, 25, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e41tu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vj6bd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtic5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ruvjk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yetid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0uda")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4efs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrgnk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5hh6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Goop" type="Node2D"]
+script = ExtResource("1_vtic5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_e41tu")
+frame_progress = 0.73113656
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vj6bd")

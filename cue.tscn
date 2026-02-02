@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcfsm4cl1k6fw"]
+
+[ext_resource type="Texture2D" uid="uid://c0gq6p5no1pq8" path="res://assets/sprites/Cue.png" id="1_nykms"]
+
+[node name="Cue" type="Node2D"]
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nykms")
