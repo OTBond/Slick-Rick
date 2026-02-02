@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bx3jf2meyqwy"]
 
-[ext_resource type="Script" uid="uid://djnrxgc87birb" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://drhpwotryh48w" path="res://ball.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://djnrxgc87birb" path="res://Scenes/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://drhpwotryh48w" path="res://Scenes/ball.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://bk3xrqke18fjv" path="res://assets/sprites/Background.png" id="2_lquwl"]
-[ext_resource type="PackedScene" uid="uid://bcfsm4cl1k6fw" path="res://cue.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://d2vec62sbprpr" path="res://goop.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bcfsm4cl1k6fw" path="res://Scenes/cue.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://d2vec62sbprpr" path="res://Scenes/goop.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")

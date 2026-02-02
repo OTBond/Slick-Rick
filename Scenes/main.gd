@@ -103,7 +103,6 @@ func goop_aim():
 				image.set_pixel(pixel_pos.x, pixel_pos.y, ice_color)
 	goop.mana -= mana_cost / num_pixels
 	goop.mana = max(goop.mana, 0)
-	print(goop.mana)
 	if not goop.mana:
 		button.show()
 	ground.texture.update(image)

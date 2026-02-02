@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://d2vec62sbprpr"]
 
 [ext_resource type="Texture2D" uid="uid://bsnb75wa8a057" path="res://assets/sprites/Goop.png" id="1_t7hpo"]
-[ext_resource type="Script" uid="uid://bs63cqqun64f0" path="res://goop.gd" id="1_vtic5"]
+[ext_resource type="Script" uid="uid://bs63cqqun64f0" path="res://Scenes/goop.gd" id="1_vtic5"]
 [ext_resource type="Texture2D" uid="uid://uh5obdqro0wx" path="res://assets/sprites/GoopBorder.png" id="2_vj6bd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vj6bd"]
