@@ -10,7 +10,7 @@ var friction = 0.08
 var ice_friction = 0.01
 var mana = 100.0
 var max_mana = 100.0
-var pixel_cost = 2		#cost per pixel to paint
+var pixel_cost = 2.5	#cost per pixel to paint
 var radius = 20 		#painting radius
 var active_radius = 10  #radius for checking ground type beneath ball
 var ice_color = Color(0.6,0.9,1.0)
@@ -45,9 +45,14 @@ func _ready() -> void:
 func new_game():
 	ball.start($StartPos.position)
 	goop.mana = max_mana
+	goop.anim.scale.x = 1
+	goop.anim.play()
+	
 	image = Image.create(screen_size.x, screen_size.y,false, Image.FORMAT_RGB8)
 	image.fill(ground_color)
 	ground.texture = ImageTexture.create_from_image(image)
+	
+	button.hide()
 	
 	gooping = true
 	aiming = false
@@ -106,6 +111,8 @@ func goop_aim():
 	if not goop.mana:
 		button.show()
 	ground.texture.update(image)
+	goop.anim.scale.x = goop.mana / max_mana
+	
 		
 	
 func _process(delta: float) -> void:
